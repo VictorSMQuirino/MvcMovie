@@ -36,13 +36,13 @@ namespace MvcMovie.Controllers
                 return NotFound();
             }
 
-            var movie = await _context.Movie
+            var movie = await _context.Movie.Include(m => m.Artists)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (movie == null)
             {
                 return NotFound();
             }
-
+            ViewBag.Artists = movie.Artists;
             return View(movie);
         }
 
