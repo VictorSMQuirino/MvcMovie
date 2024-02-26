@@ -91,6 +91,13 @@ namespace MvcMovie.Controllers
             {
                 return NotFound();
             }
+
+            var studios = _context.Studio.ToList();
+            var artists = _context.Artist.ToList();
+
+            ViewData["StudioId"] = new SelectList(studios, "StudioId", "Name");
+            ViewData["Artists"] = new SelectList(artists, "Id", "Name");
+
             return View(movie);
         }
 
@@ -99,7 +106,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,StudioId")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,StudioId")] Movie movie, string[] Artists)
         {
             if (id != movie.Id)
             {
@@ -110,7 +117,18 @@ namespace MvcMovie.Controllers
             {
                 try
                 {
-                    _context.Update(movie);
+                    var movieToUpdate = await _context.Movie.Include(m => m.Artists).FirstOrDefaultAsync(m => m.Id == id);
+
+                    var ids = Artists.Select(id => int.Parse(id)).ToList();
+                    var artistas = _context.Artist.Where(a => ids.Contains(a.Id)).ToList();
+
+                    if(movieToUpdate.Artists is not null && movieToUpdate.Artists.Any())
+                    {
+                        movieToUpdate.Artists.Clear();
+                    }
+                    
+                    movieToUpdate.Artists.AddRange(artistas);
+                    _context.Update(movieToUpdate);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
