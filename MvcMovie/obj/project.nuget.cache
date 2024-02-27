@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3TefJehYVtvPByjpCS2DG3/k5FvsErM0QBmj7SG00RPlWKni/aBF4aXNVnLEDwjQ898YsWCsDXPic2XCGsAzmw==",
+  "dgSpecHash": "Q/XRoAUQfmvmVp8rV0PJ3iOn2BXSps7bhOg/ZLUaRNTVGIl9U5ZZCpS0dLEivMDl8ROAq/RVCgGDxdgVoMMyPw==",
   "success": true,
   "projectFilePath": "/home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/MvcMovie.csproj",
   "expectedPackageFiles": [
@@ -90,6 +90,10 @@
     "/home/victorquirino/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/microsoft.identitymodel.abstractions/7.3.1/microsoft.identitymodel.abstractions.7.3.1.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.3.1/microsoft.identitymodel.jsonwebtokens.7.3.1.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/microsoft.identitymodel.logging/7.3.1/microsoft.identitymodel.logging.7.3.1.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/microsoft.identitymodel.tokens/7.3.1/microsoft.identitymodel.tokens.7.3.1.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.net.stringtools/17.3.2/microsoft.net.stringtools.17.3.2.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
@@ -160,6 +164,7 @@
     "/home/victorquirino/.nuget/packages/system.globalization/4.3.0/system.globalization.4.3.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/system.globalization.calendars/4.3.0/system.globalization.calendars.4.3.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/system.globalization.extensions/4.3.0/system.globalization.extensions.4.3.0.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/system.identitymodel.tokens.jwt/7.3.1/system.identitymodel.tokens.jwt.7.3.1.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/system.io.compression/4.3.0/system.io.compression.4.3.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/system.io.compression.zipfile/4.3.0/system.io.compression.zipfile.4.3.0.nupkg.sha512",

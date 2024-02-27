@@ -1,7 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MvcMovie.Data;
+using MvcMovie.Data.Security;
+using MvcMovie.Data.Security.Interface;
+using MvcMovie.Middlewares;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IUtils,Utils>();
 
 if (builder.Environment.IsDevelopment())
 {
@@ -32,6 +37,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseMiddleware<JwtTokenMiddleware>();
 
 app.MapControllerRoute(
     name: "default",

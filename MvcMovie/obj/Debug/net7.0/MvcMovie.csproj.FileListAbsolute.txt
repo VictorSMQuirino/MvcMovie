@@ -518,3 +518,8 @@
 /home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.pdb
 /home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.genruntimeconfig.cache
 /home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/obj/Debug/net7.0/ref/MvcMovie.dll
+/home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
