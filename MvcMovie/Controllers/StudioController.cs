@@ -57,6 +57,7 @@ namespace MvcMovie.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("StudioId,Name,Country,Site")] Studio studio)
         {
@@ -70,6 +71,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Studio/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Studio == null)
@@ -89,6 +91,7 @@ namespace MvcMovie.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("StudioId,Name,Country,Site")] Studio studio)
         {
@@ -121,6 +124,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Studio/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Studio == null)
@@ -140,6 +144,7 @@ namespace MvcMovie.Controllers
 
         // POST: Studio/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

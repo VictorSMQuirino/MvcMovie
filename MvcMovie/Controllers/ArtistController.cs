@@ -48,6 +48,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Artist/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -57,6 +58,7 @@ namespace MvcMovie.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Bio,Site")] Artist artist)
         {
@@ -70,6 +72,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Artist/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Artist == null)
@@ -89,6 +92,7 @@ namespace MvcMovie.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Bio,Site")] Artist artist)
         {
@@ -121,6 +125,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Artist/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Artist == null)
@@ -140,6 +145,7 @@ namespace MvcMovie.Controllers
 
         // POST: Artist/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = "Admin")]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
