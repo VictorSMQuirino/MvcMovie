@@ -37,7 +37,7 @@ public class LoginController : Controller
         //  if (userInDb.Email == user.Email && userInDb.Password == user.Password)
         if(userInDb != default)
         {
-            var role = userInDb.Email.Contains("_") ? "Admin" : "User";
+            var role = userInDb.Email == "admin_@email.com" ? "Admin" : "User";
             var token = _utils.GenerateJwtToken(userInDb.Email, role);
             Response.Cookies.Append("token","Bearer " + token, new CookieOptions 
             { 
