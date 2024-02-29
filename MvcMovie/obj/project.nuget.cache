@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q/XRoAUQfmvmVp8rV0PJ3iOn2BXSps7bhOg/ZLUaRNTVGIl9U5ZZCpS0dLEivMDl8ROAq/RVCgGDxdgVoMMyPw==",
+  "dgSpecHash": "iOkJJIF2jMkxulMRwxElwAgFce4zjsMpOxsNxOM8/lAcyI10mi5z+UwIsdsjDCwEKLikL4yJWaJusDOzY0Ns1g==",
   "success": true,
   "projectFilePath": "/home/victorquirino/ResidênciaTic18/DotNet/MvcMovie/MvcMovie/MvcMovie.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,7 @@
     "/home/victorquirino/.nuget/packages/humanizer.core.zh-cn/2.14.1/humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/humanizer.core.zh-hans/2.14.1/humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/humanizer.core.zh-hant/2.14.1/humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.16/microsoft.aspnetcore.authentication.jwtbearer.7.0.16.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.11/microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.build/17.3.2/microsoft.build.17.3.2.nupkg.sha512",
@@ -93,6 +94,8 @@
     "/home/victorquirino/.nuget/packages/microsoft.identitymodel.abstractions/7.3.1/microsoft.identitymodel.abstractions.7.3.1.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.3.1/microsoft.identitymodel.jsonwebtokens.7.3.1.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.identitymodel.logging/7.3.1/microsoft.identitymodel.logging.7.3.1.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
+    "/home/victorquirino/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.identitymodel.tokens/7.3.1/microsoft.identitymodel.tokens.7.3.1.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.net.stringtools/17.3.2/microsoft.net.stringtools.17.3.2.nupkg.sha512",
     "/home/victorquirino/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
